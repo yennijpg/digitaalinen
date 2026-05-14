@@ -1,0 +1,306 @@
+
+/*
+div, section, footer{
+    border: 1px;
+    border-color: white;
+    border-style: solid;
+}
+*/
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main{
+    width: 100%;
+}
+
+.navbar{
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon{
+    width: 200px;
+    height: 70px;
+}
+
+.logo{
+    color: white;
+    font-family: 'Lucida Sans';
+    font-size: 20px;
+    padding-left: 5px;
+    padding-top: 20px;
+}
+
+.menu{
+    margin-left: auto;
+    margin-right: 40px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+}
+
+ul li{
+    list-style: none;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+ul li a:hover{
+    color: #FF6C02;
+    text-decoration: underline;
+}
+
+.content{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    color: white;
+    position: relative;
+}
+.content .par {
+    padding-left: 5px;
+    padding-bottom: 30px;
+    font-family: Arial;
+    letter-spacing: 1.0px;
+    line-height: 15px;
+    font-size: 13px;
+}
+
+.content a, p{
+    font-family: Arial;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+.content a:hover{
+    text-decoration: underline;
+    color: #FF6C02;
+}
+
+.content h1{
+    font-family: Arial;
+    font-size: 30px;
+    margin-top:20px;
+    margin-bottom: 10px;
+    margin-left: 2px;
+    letter-spacing: 1px;
+}
+.content h4{
+    font-family: Arial;
+    padding: 5px;
+}
+
+.content .map{
+    font-family: Arial;
+}
+
+.content .map h4{
+    padding: 0px
+}
+
+iframe{
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+
+.content .book{
+    width: 450px;
+    height: 50px;
+    background-color: #FF6C02;
+    border: none;
+    margin-left: 5px;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: Arial;
+    text-decoration: none;
+
+}
+
+.content .book a{
+    text-decoration: none;
+    background-color: #FF6C02;
+    color: white;
+}
+
+.content .book:hover{
+    text-decoration: none;
+}
+
+.content .book a:hover{
+    color: black;
+    text-decoration: underline;
+}
+section{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-left: 15px;
+}
+
+section img{
+    width: 45%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.talents{
+    width: 45%;
+}
+
+.talents p{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.talents p:hover{
+    text-decoration: underline;
+    color: #FF6C02;
+}
+
+.talents img{
+    width: 100%;
+    height: 320px;
+}
+.book:hover{
+    text-decoration: underline;
+}
+
+footer{
+    margin-top: 40px;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+@media only screen and (min-width: 650px){ /* tablet */
+
+    .logo{
+        font-size: 26px;
+    }
+
+    ul{
+        gap: 30px;
+    }
+
+    ul li{
+        font-size: 14px;
+    }
+
+    .content h1{
+        font-size: 40px;
+    }
+
+    .content .par{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .content .book{
+        width: 400px;
+        height: 50px;
+        margin-left: 5px;
+    }
+
+    .talents{
+    width: 30%;
+    }
+}
+
+
+
+@media only screen and (min-width: 1025px){ /* desktop */
+
+    .icon{
+        margin-left: 40px;
+    }
+    .menu{
+        margin-top: 20px;
+        margin-right: 120px;
+    }
+
+
+    ul{
+        gap: 80px;
+    }
+
+    ul li{
+        font-size: 20px;
+    }
+
+    .content h1{
+    font-size: 40px;
+    margin-left: 40px;    
+    }
+
+    .content h4, .map{
+        font-size: 30px;
+        padding-left: 40px;
+        margin-bottom: 0px;
+    }
+    .content .par{
+        font-size: 20px;
+        margin-left: 39px;
+        line-height: 30px;
+    }
+
+    .content p{
+        padding-left: 40px;
+        font-size: 20px;
+        line-height: 20px;
+        margin: 5px;
+    }
+
+    .content .map p{
+        padding-left: 0px;
+        line-height: 20px;
+
+    }
+    .content .book{
+        width: 250px;
+        margin-left: 40px;
+    }
+
+    .talents{
+    width: 22%;
+    }
+    section{
+        justify-content: center;
+    }
+    section img{
+        width: 22%;
+        height: 320px;
+    }
+    
+}
